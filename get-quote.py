@@ -8,7 +8,8 @@ def m():
   rnd2=random.randint(1,5)
   for x in range(rnd2):
     rnd1=random.randint(0,last)
-    print(quotes[rnd1])
+    q = quotes[rnd1].rstrip('\n')
+    print(q)
 
 if __name__== "__main__":
   m()
